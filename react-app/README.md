@@ -1,3 +1,12 @@
+# SplitFlow React example
+
+This project showcases SplitFlow integration in a React application.
+
+- [src/index.js](https://github.com/splitflow/examples/blob/master/react-app/src/index.js) : SplitFlow setup.
+- [src/App.js](https://github.com/splitflow/examples/blob/master/react-app/src/App.js) : The Create React App home page styled with SpltFlow. Here the framework agnostic API is used together with Stitches to handle animation.
+- [src/radix/Radix.js](https://github.com/splitflow/examples/blob/master/react-app/src/radix/Radix.js) : A component using SplitFlow React API.
+- [src/radix/navigation/Navigation.js](https://github.com/splitflow/examples/blob/master/react-app/src/radix/navigation/Navigation.js) : A more complexe component using Radix UI. Core styling such as animation and absolute positionning is done with Stitches styed-components, while the look and feel styling is handled with SplitFlow. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
