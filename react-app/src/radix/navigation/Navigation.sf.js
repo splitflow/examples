@@ -2,33 +2,27 @@
 import { createStyle } from '@splitflow/designer/style'
 
 export const style = createStyle('Navigation', {
-    "Arrow": {},
-    "Content": {
+    "Arrow": {
+        "background": {
+            "color": [
+                294,
+                51,
+                50
+            ]
+        }
+    },
+    "Link": {
         "padding": {
             "top": 1,
             "bottom": 1,
             "left": 1,
             "right": 1
-        }
-    },
-    "List": {
-        "layout": {
-            "direction": "column",
-            "mainAxisAlignment": "start",
-            "crossAxisAlignment": "stretch",
-            "spacing": 1
         }
     },
     "MenuList": {
-        "padding": {
-            "top": 1,
-            "bottom": 1,
-            "left": 1,
-            "right": 1
-        },
         "background": {
             "color": [
-                149,
+                281,
                 39,
                 51
             ]
@@ -36,44 +30,62 @@ export const style = createStyle('Navigation', {
         "layout": {
             "direction": "row",
             "mainAxisAlignment": "center",
-            "crossAxisAlignment": "stretch",
-            "spacing": 3
+            "crossAxisAlignment": "center",
+            "spacing": 0
         },
         "corner": {
-            "topLeft": 2.5,
-            "topRight": 2.5,
-            "bottomLeft": 2.5,
-            "bottomRight": 2.5
+            "topLeft": 1.25,
+            "topRight": 1.25,
+            "bottomLeft": 1.25,
+            "bottomRight": 1.25
+        },
+        "typography": {
+            "fontSize": 1,
+            "fontWeight": 500,
+            "color": [
+                0,
+                0,
+                100
+            ]
+        }
+    },
+    "Trigger": {
+        "padding": {
+            "top": 1,
+            "bottom": 1,
+            "left": 1,
+            "right": 1
         }
     },
     "Viewport": {
-        "padding": {
-            "top": 0,
-            "bottom": 0,
-            "left": 0,
-            "right": 0
-        },
         "background": {
             "color": [
-                151,
-                42,
-                69
+                0,
+                0,
+                100
+            ]
+        },
+        "border": {
+            "tickness": 0.3,
+            "color": [
+                282,
+                49,
+                53,
+                1
             ]
         },
         "corner": {
-            "topLeft": 0.75,
-            "topRight": 0.75,
-            "bottomLeft": 0.75,
-            "bottomRight": 0.75
+            "topLeft": 1,
+            "topRight": 1,
+            "bottomLeft": 1,
+            "bottomRight": 1
         },
-        "border": {
-            "tickness": 0.1,
-            "color": [
-                0,
-                0,
-                0,
-                1
-            ]
+        "padding": {},
+        "size": {
+            "width": 20
         }
+    },
+    "root": {
+        "padding": {}
     }
 })

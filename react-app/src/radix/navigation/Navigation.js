@@ -157,14 +157,12 @@ const Style = createStyle(parentStyle, {
     position: "relative",
     transformOrigin: "top center",
     marginTop: 10,
-    width: "100%",
     overflow: "hidden",
     height: "var(--radix-navigation-menu-viewport-height)",
     transition: "width, height, 300ms ease",
     '&[data-state="open"]': { animation: `${scaleIn} 200ms ease` },
     '&[data-state="closed"]': { animation: `${scaleOut} 200ms ease` },
     '@media only screen and (min-width: 600px)': {
-      width: 'var(--radix-navigation-menu-viewport-width)',
     },
   }),
 
@@ -203,7 +201,6 @@ const Style = createStyle(parentStyle, {
   Arrow: styled("div", {
     position: 'relative',
     top: '70%',
-    backgroundColor: 'blue',
     width: 10,
     height: 10,
     transform: 'rotate(45deg)',

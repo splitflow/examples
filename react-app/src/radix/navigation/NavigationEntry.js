@@ -2,7 +2,7 @@ import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { css } from "@stitches/react";
 import { createStyle } from "@splitflow/designer/style";
-import { style as parentStyle } from "./NavigationEntry.sf";
+import { style } from "./NavigationEntry.sf";
 
 const NavigationEntry = React.forwardRef(
   ({ children, title, ...props }, forwardedRef) => (
@@ -16,11 +16,5 @@ const NavigationEntry = React.forwardRef(
     </li>
   )
 );
-
-const style = createStyle(parentStyle, {
-  root: css({
-    padding: "2px",
-  }),
-});
 
 export default NavigationEntry;

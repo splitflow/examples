@@ -2,21 +2,24 @@
 import { createStyle } from '@splitflow/designer/style'
 
 export const style = createStyle('NavigationEntry', {
-    "Heading": {
+    "heading": {
         "typography": {
-            "fontSize": 1.25,
-            "fontWeight": 400,
+            "fontSize": 1,
+            "fontWeight": 600,
             "color": [
-                0,
-                0,
-                0,
+                294,
+                54,
+                53,
                 1
             ]
         }
     },
     "root": {
-        "size": {
-            "width": 17
+        "padding": {
+            "top": 1,
+            "bottom": 1,
+            "left": 1,
+            "right": 1
         }
     }
 })
